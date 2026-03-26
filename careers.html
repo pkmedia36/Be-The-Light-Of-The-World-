@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Careers | Be The Light Of The World Church</title>
+
+<meta name="description" content="Join Be The Light Of The World Church team. Explore careers in ministry, media, tech, and community leadership.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f7ff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* HERO WITH VIDEO */
+.hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* VIDEO BACKGROUND */
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.2s ease;
+}
+
+@keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* JOB CARD */
+.job-card {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* APPLY BUTTON */
+.btn-apply {
+    background: #0d6efd;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-apply:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.job-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CTA */
+.cta {
+    background: #0b0b1a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 50px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">Be The Light Of World Church</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+<li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+</ul>
+
+<a href="signup.html" class="btn btn-primary ms-3">Sign Up</a>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop playsinline>
+    <source src="assets/videos/dance.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+    <h1 class="display-4 fw-bold">Join Our Mission</h1>
+    <p class="lead">Build your career while serving God through technology & ministry</p>
+    <a href="signup.html" class="btn btn-primary mt-3">Apply Now</a>
+</div>
+
+</section>
+
+<!-- JOB LISTINGS -->
+<section class="container py-5">
+
+<div class="row g-4">
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+<h5>Digital Ministry Manager</h5>
+<p>Lead online church operations and digital outreach.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1556157382-97eda2d62296">
+<h5>Media & Livestream Producer</h5>
+<p>Manage live church broadcasts and video content.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+<h5>Community Pastor Assistant</h5>
+<p>Support church members and online community growth.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51">
+<h5>Frontend Developer</h5>
+<p>Build and maintain church SaaS platform UI systems.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df">
+<h5>Social Media Evangelist</h5>
+<p>Grow church outreach on TikTok, Instagram & YouTube.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+<div class="col-md-4 reveal">
+<div class="job-card">
+<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644">
+<h5>Bible Content Writer</h5>
+<p>Create daily devotionals, sermons, and scriptures.</p>
+<a href="signup.html" class="btn-apply">Apply Now</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2 class="fw-bold">Be Part of Something Bigger</h2>
+<p>Join a global mission transforming lives through digital ministry</p>
+<a href="signup.html" class="btn btn-primary mt-3">Get Started</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Be The Light Of The World Church</p>
+</footer>
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function reveal() {
+    let items = document.querySelectorAll(".reveal");
+
+    items.forEach(el => {
+        let top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", reveal);
+reveal();
+</script>
+
+</body>
+</html>
